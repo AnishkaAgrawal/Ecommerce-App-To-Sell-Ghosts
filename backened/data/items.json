@@ -2,6 +2,27 @@
   "items": [
     [
       {
+        "id": "G010",
+        "image": "images/moaning_myrtle.jpeg",
+        "company": "Hogwarts Ltd.",
+        "item_name": "Engineering Dukh Wash™ – By Moaning Myrtle",
+        "description": "🎙️ *Ad voiceover:* ‘2 ghoont backlog ki keemat tum kya jaano, Ramesh Babu!’ 😭 Viva ka dard, attendance shortage ka maar,crush ka dhoka aur placements fear sab ke liye ek hi solution → Moaning Myrtle! Bathroom edition counselling, 24x7 Dolby Atmos crying service 🚽👻. Terms & conditions: flush khud karna padega.",
+        "original_price": 3999,
+        "current_price": 1999,
+        "discount_percentage": 50,
+        "return_period": 10,
+        "delivery_date": "Bathroom mein kabhi bhi 🚿👻",
+        "rating": { "stars": 5.0, "count": 4200 },
+        "category": "COMPANIONSHIP",
+        "tags": ["Moaning Myrtle", "Harry Potter", "Secrets", "Cry Buddy", "Engineering"],
+        "comments": [
+          "Bathroom mein Myrtle = free AR Rahman reverb 🎶😭",
+          "Myrtle ne mere saath ‘Channa Mereya’ gaaya… ab prof bhi ro raha hai 💔",
+          "Backlog wale engineering students ki brand ambassador 👏"
+        ],
+        "add_photo": ["images/moaning_myrtle1.jpeg", "images/moaning_myrtle2.jpeg"]
+      },
+      {
         "id": "G005",
         "image": "images/bloody_marry.jpeg",
         "company": "The Ring™",
@@ -61,7 +82,7 @@
           "Slappy > Shaadi.com subscription 💍",
           "From ‘beta settle kab hoga’ → to ‘mic drop roast’ 🎤🔥"
         ],
-        "add_photo": ["images/slappy1.jpeg","images/slappy1.jpeg"]
+        "add_photo": ["images/slappy1.jpeg","images/slappy2.jpeg"]
       },
       
       {
@@ -111,7 +132,7 @@
         "image": "images/vampire.jpeg",
         "company": "Dracula Education Pvt. Ltd.",
         "item_name": "CG nahi aa rahi? Order Vampire now. 1000+ saal ka study experience",
-        "description": "low CG? Vampire = Zindagi ka Ctrl+Z 😭 Phone uthaya? Vampire → ‘Zara zara padh le,padh le,padh le,… warna back aa jayegi’. Productivity > Red Bull.",
+        "description": "low CG?Vampire = Zindagi ka Ctrl+Z 😭 Phone uthaya? Books ->'Zara Zara touch me , touch me, touch me ...zara zara...' and Vampire → ‘Zara zara padh le,padh le,padh le,… warna back aa jayegi’. Productivity > Red Bull.",
         "original_price": 14999,
         "current_price": 7499,
         "discount_percentage": 50,
@@ -152,27 +173,7 @@
         "add_photo": ["images/headless1.jpeg","images/headless2.jpeg" , "images/headless3.webp"]
       },
       
-      {
-        "id": "G010",
-        "image": "images/moaning_myrtle.jpeg",
-        "company": "Hogwarts Ltd.",
-        "item_name": "Engineering Dukh Wash™ – By Moaning Myrtle",
-        "description": "🎙️ *Ad voiceover:* ‘2 ghoont backlog ki keemat tum kya jaano, Ramesh Babu!’ 😭 Viva ka dard, attendance shortage ka maar,crush ka dhoka aur placements ka dhokha… sab ke liye ek hi solution → Moaning Myrtle! Bathroom edition counselling, 24x7 Dolby Atmos crying service 🚽👻. Terms & conditions: flush khud karna padega.",
-        "original_price": 3999,
-        "current_price": 1999,
-        "discount_percentage": 50,
-        "return_period": 10,
-        "delivery_date": "Bathroom mein kabhi bhi 🚿👻",
-        "rating": { "stars": 5.0, "count": 4200 },
-        "category": "COMPANIONSHIP",
-        "tags": ["Moaning Myrtle", "Harry Potter", "Secrets", "Cry Buddy", "Engineering"],
-        "comments": [
-          "Bathroom mein Myrtle = free AR Rahman reverb 🎶😭",
-          "Myrtle ne mere saath ‘Channa Mereya’ gaaya… ab prof bhi ro raha hai 💔",
-          "Backlog wale engineering students ki brand ambassador 👏"
-        ],
-        "add_photo": ["images/moaning_myrtle1.jpeg", "images/moaning_myrtle2.jpeg"]
-      },
+      
       
       {
         "id": "G006",
@@ -200,7 +201,7 @@
         "image": "images/casper.jpeg",
         "company": "Ghostly Attendance Solutions",
         "item_name": "Casper™ – Your Loneliness 👻",
-        "description": "No friends for gossip? No crush for canteen walk? 😭 Don’t worry — Casper will keep you company. While you binge-watch anime or cry over being single, Casper is in class shouting ‘Present!’ with full Josh. Bonus: he also gives free therapy at 3 AM like a true hostel friend 💀.",
+        "description": "No friends for gossip? No crush for canteen walk? 😭 Don’t worry — Casper will keep you company. While you binge-watch anime or cry over being single, Better than Shaadi.com subscription, Casper actually stays 💀 .Bonus: he also gives free therapy at 3 AM like a true hostel friend 💀.",
         "original_price": 9999,
         "current_price": 4999,
         "discount_percentage": 50,
@@ -213,7 +214,7 @@
           "Finally… hostel loners got promoted 🥲",
           "Casper >>> 1000 fake WhatsApp groups 😂",
           "Sir: ‘Tum toh class mein the hi nahi’ → Casper: ‘Bhai main toh hamesha hoon…’ 👻",
-          "Better than Shaadi.com subscription, Casper actually stays 💀"
+          "Casper is in class shouting ‘Present!’ with full Josh. "
         ],
         "add_photo": ["images/casper1.jpeg", "images/casper2.jpeg"]
       }

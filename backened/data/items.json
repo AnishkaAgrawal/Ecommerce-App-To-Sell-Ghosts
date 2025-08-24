@@ -54,7 +54,7 @@
         "return_period": 7,
         "delivery_date": "Family dinner tonight 🍽️👻",
         "rating": { "stars": 4.7, "count": 3100 },
-        "category": "SURVIVAL KIT / FAMILY ROAST",
+        "category": "COMPANIONSHIP",
         "tags": ["Slappy", "Goosebumps", "Family Roast", "Comedy Ghost", "Rishta Killer"],
         "comments": [
           "‘Beta shaadi kab karega?’ → Slappy: ‘Pehle aunty ka TikTok ban karwao! ",
@@ -118,7 +118,7 @@
         "return_period": 3,
         "delivery_date": "Raat ke 12 baje sharp 🌙",
         "rating": { "stars": 4.9, "count": 999 },
-        "category": "EDUCATION / LOW CG STUDENTS",
+        "category": "PRODUCTIVITY",
         "tags": ["Vampire", "Study Ghost", "CGPA", "No Sleep", "Motivation"],
         "comments": [
           "Vampire ke sath meri jindagi be like-'Uno Reverse Baby'",
@@ -186,7 +186,7 @@
         "return_period": 2,
         "delivery_date": "Before exam night 🌒 (aaj hi focus karwa degi 👀)",
         "rating": { "stars": 4.7, "count": 987 },
-        "category": "PRODUCTIVITY / STUDENT NIGHTMARES",
+        "category": "PRODUCTIVITY",
         "tags": ["Valak", "The Nun", "Focus", "Productivity", "Study Ghost"],
         "comments": [
           "Valak > Pomodoro timer ⏱️",
@@ -194,13 +194,8 @@
           "Tried ignoring her once… now my books fly at me 💀",
           "Netflix: Next episode? → Valak: ‘Bas kar pagle, ro dungi ab main’ 👻"
         ],
-        "add_photo": ["images/valak_funny1.jpeg", "images/valak_funny2.jpeg"]
-      },
-      
-      
-      
-      
-       {
+        "add_photo": ["images/valak1.jpeg", "images/valak2.jpeg"]
+      },{
         "id": "G001",
         "image": "images/casper.jpeg",
         "company": "Ghostly Attendance Solutions",
@@ -212,7 +207,7 @@
         "return_period": 0,
         "delivery_date": "Tonight… with Maggi in your room 🍜👻",
         "rating": { "stars": 4.8, "count": 420 },
-        "category": "EDUCATION / FOREVER ALONE STUDENTS",
+        "category": "PRODUCTIVITY",
         "tags": ["Casper", "Attendance", "Proxy", "Lonely AF", "Ghost Friend"],
         "comments": [
           "Finally… hostel loners got promoted 🥲",

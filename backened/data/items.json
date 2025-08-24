@@ -1,0 +1,227 @@
+{
+  "items": [
+    [
+      {
+        "id": "G005",
+        "image": "images/bloody_marry.jpeg",
+        "company": "The Ring™",
+        "item_name": "Getting spam calls every day?",
+        "description": "Tera dil ka telephone bajta… Ring! Ring! Ring! 📞 Fake Calls? Gift Scammers their DreamGirl - Bloody Mary.",
+        "original_price": 12999,
+        "current_price": 6499,
+        "discount_percentage": 50,
+        "return_period": 0,
+        "delivery_date": "Aaj raat 3AM infront of Your Mirror ",
+        "rating": { "stars": 4.6, "count": 1400 },
+        "category": "PEACE",
+        "tags": ["Bloody Mary", "Spam Calls", "Mirror Ghost", "Telephone", "The Ring"],
+        "comments": [
+          "Spam caller: ‘Hello Sir loan chahiye?’ → Samara: *Hellooooooo* ",
+          "UPSC coaching wale calls se bacha lo pls 🥲"
+        ],
+        "add_photo": ["images/bloody_marry1.jpeg" ,"images/bloody_marry2.webp"]
+      },
+      {
+        "id": "G003",
+        "image": "images/stree.jpeg",
+        "company": "Bollywood Bhoot Ltd.",
+        "item_name": "Parents forcing marriage? Still single?",
+        "description": "Beta shaadi kab karega? Abhi. Stree ke saath 💍. No rishtedaar, no shaadi.com renewal, no shaadi ka stress. Sirf ek risk – shaadi ke baad zinda rehna optional hai. 🤷‍♂️😂",
+        "original_price": 14999,
+        "current_price": 9999,
+        "discount_percentage": 33,
+        "return_period": 3,
+        "delivery_date": "Shaadi fix hogi aaj raat 🌙",
+        "rating": { "stars": 5.0, "count": 999 },
+        "category": "COMPANIONSHIP",
+        "tags": ["Stree", "Marriage", "Shaadi", "Bollywood Ghost", "Companion"],
+        "comments": [
+          "Mummy: ‘Beta shaadi kab karega?’ → Me: ‘Stree aaj raat aa rahi hai’ 🤣",
+          "Stree > Tinder Gold 😭",
+          "Shaadi.com premium cancel kar diya abhi 🚩"
+        ],
+        "add_photo": ["images/stree1.jpeg", "images/stree2.jpeg"]
+      },
+      {
+        "id": "G009",
+        "image": "images/slappy.jpeg",
+        "company": "Slappy™",
+        "item_name": "Awkward family gatherings? - Introducing You Slappy",
+        "description": "Invite Slappy and watch him roast every rishtedaar harder than Kapil Sharma on steroids 🎤.Uncle: ‘Beta marks kitne aaye?’ → Slappy: ‘Utne jitne aapke hairline ke baaki hai’ 😭 ’ 💥. Dinner turns from cringe Q&A session to *Comedy Circus* ft. Ghost Dummy.",
+        "original_price": 8999,
+        "current_price": 4499,
+        "discount_percentage": 50,
+        "return_period": 7,
+        "delivery_date": "Family dinner tonight 🍽️👻",
+        "rating": { "stars": 4.7, "count": 3100 },
+        "category": "SURVIVAL KIT / FAMILY ROAST",
+        "tags": ["Slappy", "Goosebumps", "Family Roast", "Comedy Ghost", "Rishta Killer"],
+        "comments": [
+          "‘Beta shaadi kab karega?’ → Slappy: ‘Pehle aunty ka TikTok ban karwao! ",
+          "Slappy > Shaadi.com subscription 💍",
+          "From ‘beta settle kab hoga’ → to ‘mic drop roast’ 🎤🔥"
+        ],
+        "add_photo": ["images/slappy1.jpeg","images/slappy1.jpeg"]
+      },
+      
+      {
+        "id": "G002",
+        "image": "images/annabelle.jpeg",
+        "company": "The Conjuring Inc.",
+        "item_name": "Ex cheated on you? Boss rejected your leave?",
+        "description": "Boss ne chhutti reject ki? Ex ne block kiya? Dono ko Annabelle bhej do… ‘Darr ke aage Leave hai.’ 🏖️👹By morning, ya toh apology milegi… ya woh bhi Manjulika ke saath ‘Aami je tomar’ gaayenge. 🎶👻",
+        "original_price": 9999,
+        "current_price": 4999,
+        "discount_percentage": 50,
+        "return_period": 0,
+        "delivery_date": "Kal raat 12 baje 🎃",
+        "rating": { "stars": 4.5, "count": 666 },
+        "category": "REVENGE",
+        "tags": ["Annabelle", "Revenge", "Conjuring", "Ex", "Horror Doll"],
+        "comments": [
+          "Assignment reject karne wale prof ke liye already order kar diya 😌",
+          "Ex cheated? Engineering wala toxic ex approved ✅",
+          "CGPA giri toh Annabelle bhej dunga placement cell mein 💀"
+        ],
+        "add_photo": ["images/annabelle1.jpeg", "images/annabelle2.jpeg","images/annabelle3.jpeg"]
+      },
+      {
+        "id": "G007",
+        "image": "images/hand.jpeg",
+        "company": "Addams Solutions",
+        "item_name": "Wednesday’s Hand™ (Homework & Deadline Slayer) 🖐️💀",
+        "description": " Kya aapka laptop bhi aapko ignore kar raha hai? Kya aapka brain 404 error de raha hai?Too lazy to do assignments? Deadlines haunting you? Don’t worry! Wednesday’s Hand will write, code, aur submit sab kuch for you… silently.",
+        "original_price": 12999,
+        "current_price": 6499,
+        "discount_percentage": 50,
+        "return_period": 0,
+        "delivery_date": "Today… before your professor even notices 👀",
+        "rating": { "stars": 4.7, "count": 420 },
+        "category": "COMPANIONSHIP",
+        "tags": ["Wednesday", "Hand", "Addams Family", "Homework", "Assignments"],
+        "comments": [
+          "Submitted all my assignments without touching the keyboard 😅",
+          "Wednesday’s Hand = ultimate procrastination solution 😎",
+          "Sometimes writes weird comments… but who cares 😈"
+        ],
+        "add_photo": ["images/hand1.jpeg" , "images/hand2.jpeg"]
+      },
+      {
+        "id": "G012",
+        "image": "images/vampire.jpeg",
+        "company": "Dracula Education Pvt. Ltd.",
+        "item_name": "CG nahi aa rahi? Order Vampire now. 1000+ saal ka study experience",
+        "description": "low CG? Vampire = Zindagi ka Ctrl+Z 😭 Phone uthaya? Vampire → ‘Zara zara padh le,padh le,padh le,… warna back aa jayegi’. Productivity > Red Bull.",
+        "original_price": 14999,
+        "current_price": 7499,
+        "discount_percentage": 50,
+        "return_period": 3,
+        "delivery_date": "Raat ke 12 baje sharp 🌙",
+        "rating": { "stars": 4.9, "count": 999 },
+        "category": "EDUCATION / LOW CG STUDENTS",
+        "tags": ["Vampire", "Study Ghost", "CGPA", "No Sleep", "Motivation"],
+        "comments": [
+          "Vampire ke sath meri jindagi be like-'Uno Reverse Baby'",
+          "Backlogs khatam, bas thoda khoon kharch hua 🩸😂",
+          "Phone uthaya → suna *‘Beta tumse na ho payega’* 😭",
+          "Modern Vampire nhi mil sakti kya 😭😭 Ye to meri dadi ke jawane ki h...."
+        ],
+        "add_photo": ["images/vampire1.jpeg", "images/vampire2.jpeg","images/vampire3.jpeg"]
+      },
+      
+      {
+        "id": "G004",
+        "image": "images/headless.jpeg",
+        "company": "Midnight Proxy Corp.",
+        "item_name": "Headless Horseman™ (Proxy Attendance Specialist) ⚡💀",
+        "description": "Teachers be like: ‘You don’t look like roll no. 1234.’ Headless Horseman be like: ‘Exactly. No look = no problem.’ Attendance lag gayi ✅ Ab hoga Mass Bunk",
+        "original_price": 14999,
+        "current_price": 7499,
+        "discount_percentage": 50,
+        "return_period": 0,
+        "delivery_date": "Today… before the professor notices 👀",
+        "rating": { "stars": 4.8, "count": 410 },
+        "category": "SLEEP",
+        "tags": ["Headless Horseman", "Proxy", "Attendance", "Ghost Rider", "Squad"],
+        "comments": [
+          "Finally! All my friends present without showing up 😎",
+          "No head = marks everyone equally ⚡",
+          "Hoofprints on my attendance sheet… spooky but efficient 😈",
+          "Ab nhi uthna padega jaldi"
+        ],
+        "add_photo": ["images/headless1.jpeg","images/headless2.jpeg" , "images/headless3.webp"]
+      },
+      
+      {
+        "id": "G010",
+        "image": "images/moaning_myrtle.jpeg",
+        "company": "Hogwarts Ltd.",
+        "item_name": "Engineering Dukh Wash™ – By Moaning Myrtle",
+        "description": "🎙️ *Ad voiceover:* ‘2 ghoont backlog ki keemat tum kya jaano, Ramesh Babu!’ 😭 Viva ka dard, attendance shortage ka maar,crush ka dhoka aur placements ka dhokha… sab ke liye ek hi solution → Moaning Myrtle! Bathroom edition counselling, 24x7 Dolby Atmos crying service 🚽👻. Terms & conditions: flush khud karna padega.",
+        "original_price": 3999,
+        "current_price": 1999,
+        "discount_percentage": 50,
+        "return_period": 10,
+        "delivery_date": "Bathroom mein kabhi bhi 🚿👻",
+        "rating": { "stars": 5.0, "count": 4200 },
+        "category": "COMPANIONSHIP",
+        "tags": ["Moaning Myrtle", "Harry Potter", "Secrets", "Cry Buddy", "Engineering"],
+        "comments": [
+          "Bathroom mein Myrtle = free AR Rahman reverb 🎶😭",
+          "Myrtle ne mere saath ‘Channa Mereya’ gaaya… ab prof bhi ro raha hai 💔",
+          "Backlog wale engineering students ki brand ambassador 👏"
+        ],
+        "add_photo": ["images/moaning_myrtle1.jpeg", "images/moaning_myrtle2.jpeg"]
+      },
+      
+      {
+        "id": "G006",
+        "image": "images/valak.jpeg",
+        "company": "The Nun Co.",
+        "item_name": "Can’t focus on studies or work?👩‍🎓👻",
+        "description": " Valak will sit behind you, breathe down your neck, and whisper *‘Beta padhai kar le…’*. Instant fear = instant productivity ⚡. Bonus: if you try to check Instagram, she personally closes your phone with one *thappad*. Better than Pomodoro, scarier than mom with a chappal.",
+        "original_price": 15999,
+        "current_price": 7999,
+        "discount_percentage": 50,
+        "return_period": 2,
+        "delivery_date": "Before exam night 🌒 (aaj hi focus karwa degi 👀)",
+        "rating": { "stars": 4.7, "count": 987 },
+        "category": "PRODUCTIVITY / STUDENT NIGHTMARES",
+        "tags": ["Valak", "The Nun", "Focus", "Productivity", "Study Ghost"],
+        "comments": [
+          "Valak > Pomodoro timer ⏱️",
+          "Mom: ‘Padhaai kar!’ → Me: Valak lagwa lo, kaam double ho jayega 😭",
+          "Tried ignoring her once… now my books fly at me 💀",
+          "Netflix: Next episode? → Valak: ‘Bas kar pagle, ro dungi ab main’ 👻"
+        ],
+        "add_photo": ["images/valak_funny1.jpeg", "images/valak_funny2.jpeg"]
+      },
+      
+      
+      
+      
+       {
+        "id": "G001",
+        "image": "images/casper.jpeg",
+        "company": "Ghostly Attendance Solutions",
+        "item_name": "Casper™ – Your Loneliness 👻",
+        "description": "No friends for gossip? No crush for canteen walk? 😭 Don’t worry — Casper will keep you company. While you binge-watch anime or cry over being single, Casper is in class shouting ‘Present!’ with full Josh. Bonus: he also gives free therapy at 3 AM like a true hostel friend 💀.",
+        "original_price": 9999,
+        "current_price": 4999,
+        "discount_percentage": 50,
+        "return_period": 0,
+        "delivery_date": "Tonight… with Maggi in your room 🍜👻",
+        "rating": { "stars": 4.8, "count": 420 },
+        "category": "EDUCATION / FOREVER ALONE STUDENTS",
+        "tags": ["Casper", "Attendance", "Proxy", "Lonely AF", "Ghost Friend"],
+        "comments": [
+          "Finally… hostel loners got promoted 🥲",
+          "Casper >>> 1000 fake WhatsApp groups 😂",
+          "Sir: ‘Tum toh class mein the hi nahi’ → Casper: ‘Bhai main toh hamesha hoon…’ 👻",
+          "Better than Shaadi.com subscription, Casper actually stays 💀"
+        ],
+        "add_photo": ["images/casper1.jpeg", "images/casper2.jpeg"]
+      }
+    ]
+  ]
+}

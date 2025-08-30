@@ -1,27 +1,8 @@
-/* .glitch {
-  position: relative;
-  color: #ff0000;
-  text-shadow: 2px 2px 5px #000;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.scary-text {
+  font-family: 'Creepster', cursive;
 }
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-}
-.glitch::before {
-  animation: glitchTop 1s infinite linear alternate-reverse;
-  color: #0ff;
-}
-.glitch::after {
-  animation: glitchBottom 1s infinite linear alternate-reverse;
-  color: #f0f;
-}
-@keyframes glitchTop {
-  0% { clip-path: inset(0 0 90% 0); transform: translate(-2px, -2px); }
-  100% { clip-path: inset(10% 0 80% 0); transform: translate(2px, 2px); }
-}
-@keyframes glitchBottom {
-  0% { clip-path: inset(80% 0 0 0); transform: translate(2px, -2px); }
-  100% { clip-path: inset(90% 0 0 0); transform: translate(-2px, 2px); }
-} */
+

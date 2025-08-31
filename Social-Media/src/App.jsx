@@ -7,7 +7,7 @@ import Loader from './components/Loader';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from "./components/Login";
 import ReCAPTCHA from "react-google-recaptcha";   // ✅ import here
-
+import LoginForm from './components/Login2';
 function App() {
   return (
     <>
@@ -19,12 +19,12 @@ function App() {
       <Outlet/>
 
       {/* Example reCAPTCHA directly in App (for testing only) */}
-      <div className="flex justify-center my-6">
+      {/* <div className="flex justify-center my-6">
         <ReCAPTCHA
           sitekey="YOUR_SITE_KEY"  // replace with actual key
           onChange={(value) => console.log("Captcha value:", value)}
         />
-      </div>
+      </div> */}
 
       <Footer/>
     </>

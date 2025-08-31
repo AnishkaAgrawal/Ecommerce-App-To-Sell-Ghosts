@@ -5,30 +5,54 @@ import AddDetails from "./AddDetails";
 import ScaryButton from "./HauntedBtn";
 import HauntedH1 from "./HauntedH1";
 import HauntedH4 from "./HauntedH4";
-import {useState} from "react" ; 
+// import {useState} from "react" ; 
 import { Link } from "react-router-dom";
 // import ChatBot from "./ChatBot";
 import ChatbaseBot from "./ChatBot2";
+import LoginForm from "./Login2";
 
 const Home = () => {
-  // const [isPlaying , setIsPlaying] = useState(false);
-  
-  const [sound] = useState (()=> new Audio("sound/ghost.mp3"))
-  const SoundTrack = ()=>{
-    // if(isPlaying){
-      // sound.pause();
-      // sound.currentTime = 0;
-      sound.play();
-      setTimeout(()=>{
-        
-        sound.currentTime = 0;
-        sound.pause();
-        
-        // setIsPlaying(true); 
-      },1000)
-    
+  // const [isPlaying, setIsPlaying] = useState(false);
+  // const [sound] = useState(() => new Audio("sound/ghost.mp3"));
 
-  }
+  const SoundTrack = () => {
+  const ghostSound = new Audio("/sound/ghost.mp3"); // new instance
+  ghostSound.play().catch(err => console.log(err));
+
+  setTimeout(() => {
+    ghostSound.pause();
+    ghostSound.currentTime = 0;
+},4000);
+};
+  // // const [isPlaying , setIsPlaying] = useState(false);
+  
+  // const [sound] = useState (()=> new Audio("sound/ghost.mp3"))
+  // const SoundTrack = ()=>{
+  //   // if(isPlaying){
+  //     // sound.pause();
+  //     // sound.currentTime = 0;
+  //     sound.play();
+  //     setTimeout(()=>{
+        
+  //       sound.currentTime = 0;
+  //       sound.pause();
+        
+  //       // setIsPlaying(true); 
+  //     },1000)
+    
+  // const [isPlaying, setIsPlaying] = useState(false);
+//   const [ghostSound] = useState(() => new Audio("sound/ghost.mp3"));
+
+//   const SoundTrack = () => {
+//   const ghostSound = new Audio("/sound/ghost.mp3"); // new instance
+//   ghostSound.play().catch(err => console.log(err));
+
+//   setTimeout(() => {
+//     ghostSound.pause();
+//     ghostSound.currentTime = 0;
+//},4000);
+// };
+  // }
   const dispatch = useDispatch();
 
   const handleAddToCart = (item) => {
@@ -40,6 +64,7 @@ const Home = () => {
 
   return (
     <>
+    {/* <LoginForm/> */}
     <div className="relative z-100">
 
     <ChatbaseBot/>

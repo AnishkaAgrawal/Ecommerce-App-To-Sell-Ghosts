@@ -2,19 +2,33 @@
 const crypto = require("crypto");
 const express = require('express');
 const bodyParser = require('body-parser');
+const fs = require("fs");
+
 
 const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
-const secret = "•••••••••"; // your Chatbase secret key (keep safe!)
+const secret = "•••••••••"; 
 
-const USERS_FILE = "./users.json";
+const USERS_FILE = "./data/user.json";
+
+app.use(bodyParser.json());
+
+
+
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
-  // Read file
+  
   const users = JSON.parse(fs.readFileSync(USERS_FILE));
-
+console.log(users);
   const user = users.find((u) => u.email === email && u.password === password);
 
   if (user) {
@@ -34,14 +48,8 @@ app.get("/chatbase-token/:userId", (req, res) => {
   res.json({ userId, hash });
 });
 
-app.use(bodyParser.json());
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  next();
-});
+
 
 app.get('/items', async (req, res) => {
   const storedItems = await getStoredItems();

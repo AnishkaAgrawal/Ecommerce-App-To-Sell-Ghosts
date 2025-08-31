@@ -1,29 +1,46 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError(""); // reset error before new login
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("http://localhost:8080/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
 
       const data = await res.json();
-      setMessage(data.message);
+      // console.log("Server response:", data);
+
+      if (data.success) {
+        // Save login state in localStorage
+        localStorage.setItem("isAuthenticated", "true");
+        localStorage.setItem("userEmail", email);
+        console.log("Reached till here")
+        setMessage("✅ Login successful!");
+        navigate("/app"); // redirect to home page
+      } else {
+        setError(data.message);
+        localStorage.removeItem("isAuthenticated");
+        localStorage.removeItem("userEmail");
+      }
     } catch (err) {
       if (err instanceof Error) {
         setMessage("Error connecting to server. " + err.message);
       } else {
         setMessage("Error connecting to server.");
       }
+      setError("⚠️ Error connecting to server. Please try again.");
     }
-    
   };
 
   return (
@@ -39,7 +56,8 @@ export default function LoginForm() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 
+                     focus:outline-none focus:ring-2 focus:ring-red-500"
           required
         />
 
@@ -48,7 +66,8 @@ export default function LoginForm() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 
+                     focus:outline-none focus:ring-2 focus:ring-red-500"
           required
         />
 
@@ -59,8 +78,14 @@ export default function LoginForm() {
           Login
         </button>
 
-        {message && (
-          <p className="mt-4 text-center text-sm text-gray-300">{message}</p>
+        {/* Error message */}
+        {error && (
+          <p className="mt-4 text-center text-sm text-red-400">{error}</p>
+        )}
+
+        {/* Success / info message */}
+        {message && !error && (
+          <p className="mt-4 text-center text-sm text-green-400">{message}</p>
         )}
       </form>
     </div>

@@ -1,9 +1,38 @@
+
+const crypto = require("crypto");
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
+const secret = "•••••••••"; // your Chatbase secret key (keep safe!)
+
+const USERS_FILE = "./users.json";
+app.post("/login", (req, res) => {
+  const { email, password } = req.body;
+
+  // Read file
+  const users = JSON.parse(fs.readFileSync(USERS_FILE));
+
+  const user = users.find((u) => u.email === email && u.password === password);
+
+  if (user) {
+    res.json({ success: true, message: "Login successful 🎉" });
+  } else {
+    res.json({ success: false, message: "Invalid email or password ❌" });
+  }
+});
+
+app.get("/chatbase-token/:userId", (req, res) => {
+  const userId = req.params.userId; // e.g. user’s UUID or email
+  const hash = crypto
+    .createHmac("sha256", secret)
+    .update(userId)
+    .digest("hex");
+
+  res.json({ userId, hash });
+});
 
 app.use(bodyParser.json());
 

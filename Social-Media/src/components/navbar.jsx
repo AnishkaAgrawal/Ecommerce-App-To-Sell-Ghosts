@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full px-6 py-3">
         {/* Left: Logo */}
         <Link to="/">
-          <img src="/images/logo.png" className="w-10 h-10" alt="Logo" />
+          <img src="/images/logo2.gif" className="w-10 h-10" alt="Logo" />
         </Link>
 
         {/* Right: Bag + Hamburger */}

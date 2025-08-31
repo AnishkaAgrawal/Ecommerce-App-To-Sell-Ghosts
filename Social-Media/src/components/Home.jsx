@@ -7,21 +7,26 @@ import HauntedH1 from "./HauntedH1";
 import HauntedH4 from "./HauntedH4";
 import {useState} from "react" ; 
 import { Link } from "react-router-dom";
+// import ChatBot from "./ChatBot";
+import ChatbaseBot from "./ChatBot2";
 
 const Home = () => {
-  const [isPlaying , setIsPlaying] = useState(false);
-  const [sound] = useState (()=>{
-    new Audio("sound/ghost.mp3");
-  })
+  // const [isPlaying , setIsPlaying] = useState(false);
+  
+  const [sound] = useState (()=> new Audio("sound/ghost.mp3"))
   const SoundTrack = ()=>{
-    if(isPlaying){
-      sound.pause();
-      sound.currentTime = 0;
-      setIsPlaying(false);
-    }else{
+    // if(isPlaying){
+      // sound.pause();
+      // sound.currentTime = 0;
       sound.play();
-      setIsPlaying(true);
-    }
+      setTimeout(()=>{
+        
+        sound.currentTime = 0;
+        sound.pause();
+        
+        // setIsPlaying(true); 
+      },1000)
+    
 
   }
   const dispatch = useDispatch();
@@ -35,6 +40,10 @@ const Home = () => {
 
   return (
     <>
+    <div className="relative z-100">
+
+    <ChatbaseBot/>
+    </div>
       {/* Top Section with Dementor Background */}
       <div className="relative min-h-screen w-full text-white flex flex-col items-center justify-center overflow-hidden">
         {/* Background Video */}

@@ -4,11 +4,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   const navbarItem = [
-    { name: "COMPANIONSHIP", link: "/companionship" },
-    { name: "REVENGE", link: "/revenge" },
-    { name: "PRODUCTIVITY", link: "/productivity" },
-    { name: "PEACE", link: "/peace" },
-    { name: "SLEEP", link: "/sleep" },
+    { name: "COMPANIONSHIP", link: "/app/companionship" },
+    { name: "REVENGE", link: "/app/revenge" },
+    { name: "PRODUCTIVITY", link: "/app/productivity" },
+    { name: "PEACE", link: "/app/peace" },
+    { name: "SLEEP", link: "/app/sleep" },
   ];
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Right: Bag + Hamburger */}
         <div className="flex items-center gap-5">
           {/* Bag */}
-          <Link to="/add-to-cart" className="relative">
+          <Link to="/app/add-to-cart" className="relative">
             <FaBagShopping
               size={24}
               className="text-red-500 drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] hover:text-white transition-all"

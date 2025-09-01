@@ -13,10 +13,7 @@ import Bag from './components/bag.jsx';
 import Profile from "./components/profile.jsx";
 import LoginForm from './components/Login2.jsx';
 import { Navigate } from "react-router-dom";
-// import ProtectedRoute from "./components/ProtectedRoute.jsx";
-// import ProtectedRoute from '../src/components/ProtectedRoute.jsx';
 
-// New Category Components
 import Companionship from './components/Companionship.jsx';   
 import Revenge from './components/Revenge.jsx';         
 import Productivity from './components/Productivity.jsx';    
@@ -30,8 +27,8 @@ import Comments from './components/Comments.jsx';
 
 
 const router = createBrowserRouter([
-  { path: "/login", element: <LoginForm /> },
-  { path: "/", element: <Navigate to="/login" replace /> }, // redirect root to login
+  // { path: "/login", element: <LoginForm /> },
+  { path: "/", element: <Navigate to="/app" replace /> }, 
   {
     path: "/app",
     element: (
@@ -41,44 +38,19 @@ const router = createBrowserRouter([
     ),
     children: [
       { path: "", element: <Home /> },
-      { path: "details/:id", element: <Comments /> },
-      { path: "add-to-cart", element: <Bag /> },
-      { path: "ghost-order", element: <GhostOrder /> },
-      { path: "companionship", element: <Companionship /> },
-      { path: "revenge", element: <Revenge /> },
-      { path: "productivity", element: <Productivity /> },
-      { path: "peace", element: <Peace /> },
-      { path: "sleep", element: <Sleep /> },
-      { path: "product", element: <Product /> },
-      { path: "profile", element: <Profile /> },
+      { path: "/app/details/:id", element: <Comments /> },
+      { path: "/app/add-to-cart", element: <Bag /> },
+      { path: "/app/ghost-order", element: <GhostOrder /> },
+      { path: "/app/companionship", element: <Companionship /> },
+      { path: "/app/revenge", element: <Revenge /> },
+      { path: "/app/productivity", element: <Productivity /> },
+      { path: "/app/peace", element: <Peace /> },
+      { path: "/app/sleep", element: <Sleep /> },
+      { path: "/app/product", element: <Product /> },
+      { path: "/app/profile", element: <Profile /> },
     ],
   },
 ]);
-
-// const router = createBrowserRouter([
-//   {
-//     path:"/login",
-//     element:<LoginForm/>
-//   },
-//   {
-//   path: "/" , element: <App/> , children: [
-//     // {path : "/login" , element : <LoginForm/>},
-//     { path: "/" , element: <Home/> },
-//     {path : '/details/:id',element : <Comments/>},
-//     { path: "/add-to-cart", element: <Bag/> },
-//     // { path: "/profile" , element: <Profile/> },
-//     {path : "/ghost-order" ,element : <GhostOrder/>},
-//     // Updated categories to match navbarItem
-//     { path: "/companionship", element: <Companionship/> },
-//     { path: "/revenge", element: <Revenge/> },
-//     { path: "/productivity", element: <Productivity/> },
-//     { path: "/peace", element: <Peace/> },
-//     { path: "/sleep", element: <Sleep/> },
-
-//     { path: "/product", element: <Product/> },
-//   ]
-// }])
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={finalStore}>

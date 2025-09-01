@@ -43,7 +43,7 @@ const BagRight = () => {
         disabled={AddToBag.length === 0}
         onClick={() => {
           if (AddToBag.length > 0) {
-            window.location.href = "/ghost-order"; // redirect to funny ghost page
+            window.location.href = "/app/ghost-order"; // redirect to funny ghost page
           }
         }}
         className="w-full mt-6 px-6 py-3 rounded-lg bg-red-800 text-white font-semibold 

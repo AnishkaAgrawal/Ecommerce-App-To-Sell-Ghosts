@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const shoppingCategories =  [
-    { name: "COMPANIONSHIP", link: "/companionship" },
-    { name: "REVENGE", link: "/revenge" },
-    { name: "PRODUCTIVITY", link: "/productivity" },
-    { name: "PEACE", link: "/peace" },
-    { name: "SLEEP", link: "/sleep" },
+    { name: "COMPANIONSHIP", link: "/app/companionship" },
+    { name: "REVENGE", link: "/app/revenge" },
+    { name: "PRODUCTIVITY", link: "/app/productivity" },
+    { name: "PEACE", link: "/app/peace" },
+    { name: "SLEEP", link: "/app/sleep" },
   ];
 
   const spookyPolicies = [
@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-gradient-to-t from-black via-gray-950 to-red-950
+    <footer className="w-full  bg-gradient-to-t from-black via-gray-950 to-red-950
  px-8 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 

@@ -36,7 +36,7 @@ const BagLeft = () => {
               {/* Image */}
               <div className="flex justify-center items-center">
                 <img
-                  src={item.image}
+                  src={`../../public/${item.image}`}
                   alt="Cursed Item"
                   className="h-40 w-40 object-contain rounded-lg grayscale hover:grayscale-0 transition-all duration-500"
                 />

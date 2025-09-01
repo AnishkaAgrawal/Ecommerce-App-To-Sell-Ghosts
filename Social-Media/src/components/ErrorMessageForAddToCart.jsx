@@ -15,7 +15,7 @@ const ErrorMessageForAddToCart = () => {
       </p>
 
       <Link
-        to="/"
+        to="/app"
         className="bg-red-800 !no-underline hover:bg-red-600 text-white px-8 py-3 rounded-xl shadow-lg transition duration-300 spooky-heading"
       >
         🔥 Summon Items

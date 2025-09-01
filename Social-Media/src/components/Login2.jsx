@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import TrickyButtons from "./MagicButton";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ export default function LoginForm() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(""); // reset error before new login
+    setError("");
     try {
       const res = await fetch("http://localhost:8080/login", {
         method: "POST",
@@ -19,73 +20,80 @@ export default function LoginForm() {
       });
 
       const data = await res.json();
-      // console.log("Server response:", data);
 
       if (data.success) {
-        // Save login state in localStorage
         localStorage.setItem("isAuthenticated", "true");
         localStorage.setItem("userEmail", email);
-        console.log("Reached till here")
-        setMessage("✅ Login successful!");
-        navigate("/app"); // redirect to home page
+        setMessage("🎉 Login successful! Welcome back!");
+        navigate("/app");
       } else {
-        setError(data.message);
+        setError("🚨 " + data.message);
         localStorage.removeItem("isAuthenticated");
         localStorage.removeItem("userEmail");
       }
     } catch (err) {
-      if (err instanceof Error) {
-        setMessage("Error connecting to server. " + err.message);
-      } else {
-        setMessage("Error connecting to server.");
-      }
       setError("⚠️ Error connecting to server. Please try again.");
     }
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-black">
+    <div className="flex justify-center items-center h-screen bg-gradient-to-br from-purple-900 via-pink-900 to-yellow-900 animate-pulse">
       <form
-        onSubmit={handleLogin}
-        className="bg-gray-900 text-white p-8 rounded-2xl shadow-lg w-96"
+        onSubmit={handleLogin} noValidate
+        className="bg-gradient-to-tr from-pink-700 via-purple-700 to-indigo-800 text-white p-8 rounded-3xl shadow-2xl w-96 transform hover:scale-105 transition duration-500"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+        <h2 className="text-3xl font-extrabold mb-6 text-center animate-bounce">
+          😎 FUN Login!
+        </h2>
 
-        <label className="block mb-2">Email</label>
+        <label className="block mb-2 text-lg">Email ✉️</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 
-                     focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="Type your secret email 🤫"
+          className="w-full p-3 mb-4 rounded-full bg-gray-900 border-2 border-pink-500
+             focus:outline-none focus:ring-4 focus:ring-pink-700 text-transparent
+             caret-transparent font-bold placeholder-gray-600 appearance-none invalid:border-gray-700"
           required
         />
 
-        <label className="block mb-2">Password</label>
+        <label className="block mb-2 text-lg">Password 🔒</label>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-4 rounded bg-gray-800 border border-red-700 
-                     focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="Your secret password 🕵️‍♂️"
+          className="w-full p-3 mb-4 rounded-full bg-gray-900 border-2 border-pink-500
+             focus:outline-none focus:ring-4 focus:ring-pink-700 text-transparent
+             caret-transparent font-bold placeholder-gray-600 appearance-none invalid:border-gray-700"
           required
         />
+        <button
+        disabled
+          className="w-full bg-gradient-to-r from-pink-500 to-purple-500
+                     hover:from-purple-500 hover:to-pink-500 text-white py-3 rounded-full
+                     font-bold text-lg transform hover:scale-110 transition-all"
+        >
+          🚀Submit
+        </button>
+      <div className="p-2 m-2"></div>
 
         <button
           type="submit"
-          className="w-full bg-red-700 hover:bg-red-800 text-white py-2 rounded-lg transition"
+          className="w-full bg-gradient-to-r from-pink-500 to-purple-500
+                     hover:from-purple-500 hover:to-pink-500 text-white py-3 rounded-full
+                     font-bold text-lg transform hover:scale-110 transition-all"
         >
-          Login
+          🚀 Exit-You can't do it!
         </button>
+        {/* <TrickyButtons/> */}
 
-        {/* Error message */}
         {error && (
-          <p className="mt-4 text-center text-sm text-red-400">{error}</p>
+          <p className="mt-4 text-center text-sm text-red-300 animate-shake">{error}</p>
         )}
-
-        {/* Success / info message */}
         {message && !error && (
-          <p className="mt-4 text-center text-sm text-green-400">{message}</p>
+          <p className="mt-4 text-center text-sm text-green-300 animate-pulse">{message}</p>
         )}
       </form>
     </div>

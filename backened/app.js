@@ -28,7 +28,7 @@ app.post("/login", (req, res) => {
 
   
   const users = JSON.parse(fs.readFileSync(USERS_FILE));
-console.log(users);
+
   const user = users.find((u) => u.email === email && u.password === password);
 
   if (user) {
